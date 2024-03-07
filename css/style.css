@@ -1,0 +1,28 @@
+.container {
+	background-color: lightgreen;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	/* grid-template-rows: 1fr 1fr; */
+}
+
+.sidebar {
+	grid-column: 1 / 2;
+	background-color: lightcyan;
+}
+
+.item {
+	background-color: lightsalmon;
+}
+
+.main-content {
+	grid-column: 2 / 3;
+	background-color: lightskyblue;
+}
+
+.header {
+	background-color: lightpink;
+}
+
+.projects {
+	background-color: lightseagreen;
+}
