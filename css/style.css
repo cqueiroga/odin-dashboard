@@ -10,9 +10,11 @@
 }
 
 .container {
+	max-width: 1200px;
+	margin: 0 auto;
 	background-color: lightgreen;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: minmax(200px, 1fr) minmax(400px, 4fr);
 }
 
 .sidebar {
@@ -87,7 +89,89 @@ nav a,
 }
 
 .header {
-	background-color: lightpink;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 0px 20px;
+}
+
+.search-bar {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	margin: 10px;
+	display: flex;
+}
+
+.search-bar img {
+	width: 18px;
+}
+
+.search-bar input {
+	width: 500px;
+	border-radius: 15px;
+	border-style: none;
+	background-color: #e2e7f1;
+	padding: 5px 10px;
+	margin-left: 10px;
+	align-self: center;
+}
+
+.profile-info {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-right: 20px;
+}
+
+#notification-icon {
+	width: 20px;
+	margin: 10px;
+}
+
+#profile-info-icon {
+	width: 35px;
+	margin: 10px;
+}
+
+.profile-info h5 {
+	margin: 10px;
+	font-size: 16px;
+}
+
+.welcome-msg-container {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+
+.welcome-msg-container img {
+	width: 45px;
+}
+
+.welcome-msg h5 {
+	font-size: 10px;
+}
+
+.action-btn-container {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	display: flex;
+}
+
+.action-btn-container button {
+	background-color: #1692d3;
+	border-radius: 20px;
+	border: none;
+	padding: 8px 0px;
+	align-self: flex-start;
+	width: 90px;
+	color: white;
+	margin: 10px;
 }
 
 .projects {
