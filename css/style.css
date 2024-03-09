@@ -22,11 +22,6 @@
 	padding: 10px;
 }
 
-.logo {
-	display: flex;
-	align-items: center;
-}
-
 .logo img {
 	filter: invert(1);
 	width: 35px;
@@ -50,16 +45,40 @@ nav a,
 	color: white;
 }
 
+.logo,
 nav,
 .help-links {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 4fr;
 }
 
 nav img,
 .help-links img {
 	filter: invert(1);
-	width: 25px;
+	width: 22px;
+}
+
+.logo img,
+nav img,
+.help-links img {
+	justify-self: center;
+}
+
+.logo h1,
+nav a,
+.help-links a {
+	align-self: center;
+}
+
+nav img,
+nav a,
+.help-links img,
+.help-links a {
+	padding-bottom: 22px;
+}
+
+.help-links {
+	margin-top: 35px;
 }
 
 .main-content {
