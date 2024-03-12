@@ -185,7 +185,7 @@ nav a,
 }
 
 .proj-announcement {
-	padding: 12px;
+	padding: 16px;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 }
@@ -196,7 +196,7 @@ nav a,
 
 .proj-announcement h3 {
 	font-size: 16px;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 8px;
 }
 
@@ -225,7 +225,7 @@ nav a,
 	font-size: 12px;
 }
 
-.annoucements-trending {
+.announcements-trending {
 	grid-column: 2 / 3;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
@@ -233,15 +233,29 @@ nav a,
 	gap: 15px;
 }
 
-.annoucements {
+.announcements {
 	grid-row: 1 / 2;
 }
 
-.annoucement-card {
-	width: 250px;
-	height: 270px;
+.announcement-card {
+	width: 192px;
+	height: 220px;
 	background-color: white;
 	border-radius: 6px;
+	padding: 25px 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+.announcement-title {
+	font-family: roboto-bold;
+	font-size: 11px;
+}
+
+.announcement-sub-text {
+	font-family: roboto-thin;
+	font-size: 10px;
 }
 
 .trending {
@@ -249,14 +263,39 @@ nav a,
 }
 
 .trending-card {
-	width: 250px;
-	height: 270px;
+	width: 192px;
+	height: 220px;
 	background-color: white;
 	border-radius: 6px;
+	padding: 25px 25px;
 }
 
 .cards,
-.annoucement-card,
+.announcement-card,
 .trending-card {
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.trending-container {
+	display: flex;
+	align-items: center;
+}
+
+.trending-container img {
+	width: 38px;
+	margin-right: 8px;
+}
+
+.trending-container img,
+.trending-text {
+	margin-bottom: 20px;
+}
+
+.social-tag,
+.trending-proj-name {
+	font-size: 11px;
+}
+
+.trending-proj-name {
+	font-family: roboto-thin;
 }
